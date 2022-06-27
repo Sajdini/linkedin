@@ -8,12 +8,10 @@ import {
   CTA,
   Footer,
 } from "../components/LoginComponents";
-import NavBar from "../components/NavBar";
 
 const Login = () => {
   return (
     <Container>
-      <NavBar />
       <Hero />
       <Topics />
       <Post />
