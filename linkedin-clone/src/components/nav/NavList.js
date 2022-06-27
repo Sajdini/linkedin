@@ -12,51 +12,58 @@ import {
 
 const NavList = () => {
   return (
-    <>
-      <List>
-        <Item>
-          <Link to="/home">
-            <ImHome3 />
-            <span>Home</span>
-          </Link>
-        </Item>
-        <Item>
-          <Link to="/network">
-            <BsPeopleFill />
-            <span>Network</span>
-          </Link>
-        </Item>
-        <Item>
-          <Link to="/jobs">
-            <BsBriefcaseFill />
-            <span>Jobs</span>
-          </Link>
-        </Item>
-        <Item>
-          <Link to="/messaging">
-            <BsChatRightDotsFill />
-            <span>Messaging</span>
-          </Link>
-        </Item>
-        <Item>
-          <Link to="/Notifications">
-            <BsBellFill />
-            <span>Notifications</span>
-          </Link>
-        </Item>
-      </List>
-    </>
+    <List>
+      <Item>
+        <Link to="/home">
+          <ImHome3 />
+          <span>Home</span>
+        </Link>
+      </Item>
+      <Item>
+        <Link to="/network">
+          <BsPeopleFill />
+          <span>Network</span>
+        </Link>
+      </Item>
+      <Item>
+        <Link to="/jobs">
+          <BsBriefcaseFill />
+          <span>Jobs</span>
+        </Link>
+      </Item>
+      <Item>
+        <Link to="/messaging">
+          <BsChatRightDotsFill />
+          <span>Messaging</span>
+        </Link>
+      </Item>
+      <Item>
+        <Link to="/Notifications" style={{ marginRight: "1rem" }}>
+          <BsBellFill />
+          <span>Notifications</span>
+        </Link>
+      </Item>
+    </List>
   );
 };
 
 export default NavList;
 
 const List = styled.ul`
-  color: white;
   text-decoration: none;
   display: flex;
   gap: 3rem;
   position: relative;
+
+  @media (max-width: 43.75em) {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    justify-content: space-around;
+    padding: 1rem;
+  }
 `;
 
 const Item = styled.li`

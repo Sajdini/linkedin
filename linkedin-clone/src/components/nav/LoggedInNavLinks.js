@@ -5,7 +5,7 @@ import NavList from "./NavList";
 
 const LoggedInNavLinks = () => {
   return (
-    <>
+    <NavContainer>
       <LogoAndSearchContainer>
         <Link to={"/home"}>
           <img src="/images/linkedin.png" alt="logo" />
@@ -13,9 +13,25 @@ const LoggedInNavLinks = () => {
         <input />
       </LogoAndSearchContainer>
       <NavList />
-    </>
+    </NavContainer>
   );
 };
+
+const NavContainer = styled.div`
+  padding: 1.2rem 1rem 1.2rem 0;
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-right: 1px solid #ddd;
+  @media (max-width: 59.33em) {
+    max-width: 100%;
+    padding: 1.2rem 0;
+  }
+`;
 
 const LogoAndSearchContainer = styled.div`
   display: flex;
@@ -28,6 +44,16 @@ const LogoAndSearchContainer = styled.div`
       no-repeat 13px center;
     padding: 9px 4px 9px 40px;
     background-color: #f1f2f8;
+  }
+
+  @media (max-width: 43.75em) {
+    justify-content: space-around;
+    width: 100%;
+
+    input {
+      width: 80%;
+      margin-right: 1rem;
+    }
   }
 `;
 

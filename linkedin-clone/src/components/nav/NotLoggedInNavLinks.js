@@ -14,7 +14,7 @@ const NotLoggedInNavLinks = () => {
   };
 
   return (
-    <>
+    <NavContainer>
       <Logo href="/">
         <img src="/images/login-logo.svg" alt="login logo" />
       </Logo>
@@ -22,9 +22,24 @@ const NotLoggedInNavLinks = () => {
         <Join>Join Now</Join>
         <SignIn onClick={loginHandler}> Sign In</SignIn>
       </AuthContainer>
-    </>
+    </NavContainer>
   );
 };
+
+const NavContainer = styled.div`
+  padding: 1.2rem 1rem 1.2rem 0;
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-right: 1px solid #ddd;
+  @media (max-width: 24.57em) {
+    max-width: 100%;
+  }
+`;
 
 const Logo = styled.a`
   width: 13.5rem;

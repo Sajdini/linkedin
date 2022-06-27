@@ -9,9 +9,7 @@ const NavBar = () => {
 
   return (
     <Nav isLoggedin={isLoggedIn}>
-      <NavContainer>
-        {isLoggedIn ? <LoggedInNavLinks /> : <NotLoggedInNavLinks />}
-      </NavContainer>
+      {isLoggedIn ? <LoggedInNavLinks /> : <NotLoggedInNavLinks />}
     </Nav>
   );
 };
@@ -19,23 +17,12 @@ const NavBar = () => {
 const Nav = styled.nav`
   padding: 0 4rem;
   background-color: ${(props) => (props.isLoggedin ? "#fff" : "")};
-  @media (max-width: 24em) {
+  @media (max-width: 50em) {
     padding: 1rem;
   }
-`;
 
-const NavContainer = styled.div`
-  padding: 1.2rem 1rem 1.2rem 0;
-  max-width: 85%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  border-right: 1px solid #ddd;
-  @media (max-width: 24.57em) {
-    max-width: 100%;
+  @media (max-width: 59.33em) {
+    padding: 0;
   }
 `;
 
