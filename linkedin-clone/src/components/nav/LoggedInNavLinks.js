@@ -18,8 +18,8 @@ const LoggedInNavLinks = () => {
 };
 
 const NavContainer = styled.div`
-  padding: 1.2rem 1rem 1.2rem 0;
-  max-width: 85%;
+  padding: 1.2rem 0;
+  max-width: 90%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ const NavContainer = styled.div`
   justify-content: space-between;
   flex-wrap: nowrap;
   border-right: 1px solid #ddd;
-  @media (max-width: 59.33em) {
+  @media (max-width: 65.87em) {
     max-width: 100%;
     padding: 1.2rem 0;
   }

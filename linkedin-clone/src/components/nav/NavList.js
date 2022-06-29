@@ -52,7 +52,7 @@ export default NavList;
 const List = styled.ul`
   text-decoration: none;
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   position: relative;
 
   @media (max-width: 43.75em) {
@@ -74,7 +74,9 @@ const Item = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 300ms;
   a {
     text-decoration: none !important ;
     color: #444;
@@ -101,5 +103,9 @@ const Item = styled.li`
 
   span {
     display: block;
+  }
+
+  :hover {
+    background-color: #ddd;
   }
 `;
