@@ -54,13 +54,7 @@ const LeftColumn = () => {
   );
 };
 
-const Container = styled.div`
-  grid-area: leftside;
-
-  @media (max-width: 65.87em) {
-    display: none;
-  }
-`;
+const Container = styled.div``;
 
 const ArtCard = styled.div`
   text-align: center;

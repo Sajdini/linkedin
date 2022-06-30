@@ -23,20 +23,11 @@ const MainColumn = () => {
 };
 
 const Container = styled.div`
-  grid-area: main;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
   max-width: 100%;
-
-  @media (max-width: 65.87em) {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  @media (max-width: 27.75em) {
-    max-width: 100%;
-  }
 `;
 
 const PostSort = styled.div`

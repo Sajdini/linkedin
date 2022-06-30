@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { BiLike } from "react-icons/bi";
-
+import { BiLike, BiCommentDetail } from "react-icons/bi";
+import { FaShare } from "react-icons/fa";
+import { FiSend } from "react-icons/fi";
 import { TiLocationArrowOutline } from "react-icons/ti";
 const PostReaction = () => {
   return (
@@ -11,15 +12,15 @@ const PostReaction = () => {
         <span>Like</span>
       </Reaction>
       <Reaction>
-        <BiLike />
+        <BiCommentDetail />
         <span>Comment</span>
       </Reaction>
       <Reaction>
-        <TiLocationArrowOutline />
+        <FaShare />
         <span>Share</span>
       </Reaction>
       <Reaction>
-        <TiLocationArrowOutline />
+        <FiSend />
         <span>Send</span>
       </Reaction>
     </Container>
@@ -31,6 +32,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 18.12em) {
+    padding: 0 4px;
+  }
 `;
 
 const Reaction = styled.div`
@@ -53,6 +57,19 @@ const Reaction = styled.div`
 
   :hover {
     background-color: #ddd;
+  }
+
+  @media (max-width: 18.12em) {
+    padding: 0;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
   }
 `;
 

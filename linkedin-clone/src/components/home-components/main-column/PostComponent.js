@@ -22,7 +22,7 @@ const PostComponent = () => {
       <ReactionIcons>
         <ul>
           <li>
-            <img src="/images/like-icon.png" />
+            <img src="/images/like-icon.png" alt="emoticon" />
           </li>
         </ul>
         <span>9</span>

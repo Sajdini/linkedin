@@ -15,7 +15,6 @@ const RightColumn = () => {
 };
 
 const Container = styled.div`
-  grid-area: rightside;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -25,10 +24,6 @@ const Container = styled.div`
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
-  @media (max-width: 65.87em) {
-    display: none;
-  }
 `;
 
 const ColumnTitle = styled.div`

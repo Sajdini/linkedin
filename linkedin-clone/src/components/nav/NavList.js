@@ -60,9 +60,18 @@ const List = styled.ul`
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: 10;
+    z-index: 20;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0;
+    border-top: 0.5px solid #ddd;
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  @media (max-width: 20.5em) {
+    gap: 0;
+    flex-shrink: 1;
   }
 `;
 
